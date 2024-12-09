@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert Dreams</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./images/cake-logo.avif" height="70px"></a>
+            <h1 class="logo-txt">Desert Dreams</h1>
+        </div>
+
+        <div class="menu-list">
+            <a href="./index.html">CAKE</a>
+            <a href="./about.html">ABOUT US</a>
+            <a href="./contact.html">CONTECT US</a>
+        </div>
+        <div class="cart-container">
+            <button class="cart-button" onclick="toggleCart()">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <a href="./signup.html"><button class="btn">Sign Up</button></a>
+            <a href="./login.html"><button class="btn" href="login.html">Login</button></a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Our <br> Cake Shop</h1>
+            <p>The Art Of Sweet Creations.</p>
+        </div>
+        <div class="hero-image">
+            <img src="./images/Red Velvet Cakes/valentine-s-heart-red-velvet-cake-half-kg_1.webp" height="350">
+        </div>
+    </div>
+    <h2 class="product-title">Cakes:Fresh & Flavourful</h2>
+        
+    <nav>
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search for products...">
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="Black-Forest">Black-Forest</option>
+            <option value="Butterscotch">Butterscotch</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Red-Velvet">Red-Velvet</option>
+        </select>
+    </nav>
+
+    <div id="productList" class="product-list"></div>
+
+    <div class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <div class="cart-total">
+            <strong>Total: <span id="cartTotal">0.00</span></strong>
+        </div>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>We are your number one source for all things Cakes,Sweets,etc.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: smitrajsinh210@gmail.com</p>
+                <p>Phone: +91 9978209423</p>
+                <p>Address:sector 20, Gandhinagar City, Gujarat-382021</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-icon.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/whatsapp-business-icon.png" alt="whatsapp-business"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form id="newsletterForm">
+                    <input type="email" id="newsletterEmail" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                    <p id="newsletterFeedback"></p>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+
+    <script src="./product.js">
+
+    </script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
